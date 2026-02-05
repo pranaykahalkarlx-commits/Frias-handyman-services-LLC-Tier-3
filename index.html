@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium professional services — Strategic consulting, coaching, and digital transformation for business excellence.">
+  <meta name="keywords" content="business consulting, professional services, strategic solutions, business coaching">
+  <meta name="theme-color" content="#336699">
+  <link rel="manifest" href="manifest.json">
+  <title>Frias handyman services, LLC | Professional Services</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 38 38'%3E%3Crect width='38' height='38' rx='9' fill='%23336699'/%3E%3Cpath d='M9 19L16 26L29 12' stroke='%23FF9933' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Frias handyman services, LLC",
+    "url":"https://yourdomain.com",
+    "logo":"https://yourdomain.com/logo.svg",
+    "description":"Premium professional services — Strategic consulting, coaching, and digital transformation for business excellence.",
+    "telephone":"12125550100",
+    "email":"info@yourbusiness.com",
+    "address":[
+      {
+        "@type":"PostalAddress",
+        "streetAddress":"123 Business Ave, Suite 500",
+        "addressLocality":"New York",
+        "addressRegion":"NY",
+        "postalCode":"10001"
+      },{
+        "@type":"PostalAddress",
+        "streetAddress":"456 Commerce Blvd, Floor 3",
+        "addressLocality":"New York",
+        "addressRegion":"NY",
+        "postalCode":"10002"
+      },{
+        "@type":"PostalAddress",
+        "streetAddress":"789 Innovation Dr, Unit 2B",
+        "addressLocality":"Brooklyn",
+        "addressRegion":"NY",
+        "postalCode":"11201"
+      }
+    ],
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"47"},
+    "sameAs":["https://facebook.com","https://linkedin.com","https://twitter.com"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"How do I book an appointment?","acceptedAnswer":{"@type":"Answer","text":"Visit our Booking page, select a service, choose a date and time, and complete payment. You can also call us directly."}},
+      {"@type":"Question","name":"Do you offer emergency services?","acceptedAnswer":{"@type":"Answer","text":"Yes, we offer 24/7 emergency booking for premium clients. Contact us immediately for urgent needs."}},
+      {"@type":"Question","name":"What payment methods do you accept?","acceptedAnswer":{"@type":"Answer","text":"We accept all major credit cards via Stripe, and offer both full payment and deposit options."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <svg width="38" height="38" viewBox="0 0 38 38">
+            <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#FF9933"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs>
+            <rect width="38" height="38" rx="9" fill="#336699"/>
+            <path d="M9 19L16 26L29 12" stroke="url(#logoGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Frias handyman services, LLC</span>
+        </a>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link active">Home</a></li><li><a href="about.html" class="nav-link ">About</a></li><li><a href="services.html" class="nav-link ">Services</a></li><li><a href="locations.html" class="nav-link ">Locations</a></li><li><a href="booking.html" class="nav-link ">Book Now</a></li>
+        <li class="nav-auth-group">
+          <a href="login.html" class="nav-link btn-login" id="nav-login-btn">Login</a>
+          <a href="customer-portal.html" class="nav-link btn-portal" id="nav-portal-btn" style="display:none;">My Account</a>
+          <a href="admin-dashboard.html" class="nav-link btn-admin" id="nav-admin-btn" style="display:none;">Dashboard</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg-pattern"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <span class="hero-tag"><span class="tag-dot"></span>Professional Services — Est. 2009</span>
+        <h1 class="hero-title">Expert Handyman Services in Aurora, Colorado | Frias handyman services, LLC</h1>
+        <p class="hero-description">Professional Craftsmanship, Reliable Solutions, and Clear Communication for Your Home &amp; Exterior Projects.</p>
+        <div class="hero-buttons">
+          <a href="booking.html" class="btn btn-primary">📅 Get Your Free Estimate Today!</a>
+          <a href="tel:12125550100" class="btn btn-ghost">📞 Call Now</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><div class="stat-number">4.8★</div><div class="stat-label">Rating</div></div>
+          <div class="stat stat-divider"></div>
+          <div class="stat"><div class="stat-number">47+</div><div class="stat-label">Clients</div></div>
+          <div class="stat stat-divider"></div>
+          <div class="stat"><div class="stat-number">17+</div><div class="stat-label">Years</div></div>
+        </div>
+      </div>
+      <!-- CORRECTED HERO VISUAL SECTION -->
+<div class="hero-visual">
+  <!-- Floating Card 1: Revenue Growth (Top Left) -->
+  <div class="hero-card-float hero-card-1">
+    <div class="float-card-icon">📈</div>
+    <div class="float-card-text">
+      <strong>Revenue Growth</strong>
+      <span>+47% This Quarter</span>
+    </div>
+  </div>
+  
+  <!-- Floating Card 2: Goals Met (Middle Left) -->
+  <div class="hero-card-float hero-card-2">
+    <div class="float-card-icon">🎯</div>
+    <div class="float-card-text">
+      <strong>Goals Met</strong>
+      <span>98% Success Rate</span>
+    </div>
+  </div>
+  
+  <!-- Floating Card 3: Client Rating (Top Right) -->
+  <div class="hero-card-float hero-card-3">
+    <div class="float-card-icon">⭐</div>
+    <div class="float-card-text">
+      <strong>Client Rating</strong>
+      <span>4.8 / 5.0</span>
+    </div>
+  </div>
+  
+  <!-- Main Circle with Progress Ring -->
+  <div class="hero-circle-main">
+    <div class="hero-circle-inner">
+      <!-- SVG Progress Ring -->
+      <svg viewBox="0 0 120 120" class="hero-ring">
+        <defs>
+          <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#6366f1"/>
+            <stop offset="100%" style="stop-color:#f59e0b"/>
+          </linearGradient>
+        </defs>
+        <!-- Background circle (full, dimmed) -->
+        <circle 
+          cx="60" 
+          cy="60" 
+          r="54" 
+          fill="none" 
+          stroke="rgba(100, 116, 139, 0.2)" 
+          stroke-width="6"
+        />
+        <!-- Progress circle (98%) -->
+        <circle 
+          cx="60" 
+          cy="60" 
+          r="54" 
+          fill="none" 
+          stroke="url(#ringGradient)" 
+          stroke-width="6" 
+          stroke-dasharray="339.3" 
+          stroke-dashoffset="6.8" 
+          stroke-linecap="round"
+          style="filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.5))"
+        />
+      </svg>
+      
+      <!-- Center Text -->
+      <div class="hero-center-text">
+        <span class="hero-center-num">98%</span>
+        <span>SUCCESS</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- NOTES FOR IMPLEMENTATION:
+1. The SVG ring is rotated -90deg via CSS to start from top
+2. stroke-dasharray="339.3" = full circumference (2 * π * 54)
+3. stroke-dashoffset="6.8" = 2% gap (339.3 * 0.02)
+4. The gradient goes from indigo to amber matching the design
+5. Floating cards have backdrop-filter for glassmorphism effect
+6. z-index ensures cards appear above the ring
+-->
+  </section>
+
+  <!-- USP STRIP -->
+  <section class="usp-strip">
+    <div class="container">
+      <div class="usp-grid">
+        
+        <div class="usp-item">
+          <div class="usp-icon">✓</div>
+          <span>Professionalism You Can Trust</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">✓</div>
+          <span>Unwavering Reliability and Timeliness</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">✓</div>
+          <span>Exceptional Craftsmanship and Attention to Detail</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">✓</div>
+          <span>Clear and Consistent Communication</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">undefined</div>
+          <span>Local Expertise in Aurora, Colorado</span>
+        </div>
+        <div class="usp-item">
+          <div class="usp-icon">undefined</div>
+          <span>Comprehensive Handyman and Exterior Solutions</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="section services-preview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Offer</span>
+        <h2 class="section-title">Premium Services</h2>
+        <p class="section-subtitle">Tailored solutions for every business challenge</p>
+      </div>
+      <div class="services-grid">
+        
+        <div class="service-card" style="animation-delay:0s">
+          <div class="service-card-header">
+            <span class="service-category-tag">General</span>
+            <span class="service-price-tag">$150</span>
+          </div>
+          <h3>Comprehensive Handyman &amp; Exterior Services</h3>
+          <p>From minor repairs to significant home improvements, Frias handyman services, LLC offers a wide range of reliable services designed to keep your property in pristine condition. Our skilled team handles interior tasks with precision and exterior projects with durability in mind, ensuring professional craftsmanship and peace of mind for every client in Aurora, Colorado.</p>
+          <div class="service-card-meta">
+            <span class="service-duration">⏱ 60 min</span>
+            <span class="service-staff">👤 1 staff</span>
+          </div>
+          <a href="booking.html?service=Comprehensive%20Handyman%20%26%20Exterior%20Services" class="service-cta">Book Now →</a>
+        </div>
+      </div>
+      <div class="section-cta-wrap">
+        <a href="services.html" class="btn btn-outline">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAFF -->
+  <section class="section staff-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Team</span>
+        <h2 class="section-title">Meet the Experts</h2>
+      </div>
+      <div class="staff-grid">
+        
+        <div class="staff-card">
+          <div class="staff-avatar">AJ</div>
+          <h4>Alex Johnson</h4>
+          <span class="staff-role">Senior Consultant</span>
+          <p>15 years of industry experience</p>
+          <div class="staff-tags"><span class="tag">Strategy</span><span class="tag">Business Growth</span></div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-avatar">MS</div>
+          <h4>Maria Santos</h4>
+          <span class="staff-role">Business Coach</span>
+          <p>Certified leadership coach</p>
+          <div class="staff-tags"><span class="tag">Coaching</span><span class="tag">Team Building</span></div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-avatar">DL</div>
+          <h4>David Lee</h4>
+          <span class="staff-role">Digital Strategist</span>
+          <p>Former tech executive turned advisor</p>
+          <div class="staff-tags"><span class="tag">Digital</span><span class="tag">Innovation</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Absolutely outstanding service. The team was professional and delivered beyond expectations."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SM</div>
+            <span>Sarah M.</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Best experience I&#039;ve had. Will definitely recommend to everyone I know."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">JR</div>
+            <span>James R.</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★☆</div>
+          <p class="testimonial-text">"Very impressed with the quality and attention to detail. Worth every penny."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">EK</div>
+            <span>Emily K.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMERGENCY BOOKING CTA -->
+  <section class="emergency-cta">
+    <div class="container">
+      <div class="emergency-box">
+        <div class="emergency-icon">🚨</div>
+        <div class="emergency-text">
+          <h3>Need Urgent Help?</h3>
+          <p>We offer 24/7 emergency booking for immediate needs. Our team is always ready.</p>
+        </div>
+        <a href="booking.html?type=emergency" class="btn btn-emergency">Emergency Booking</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <div class="section-header" style="text-align:left;">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Let's Talk</h2>
+          </div>
+          <div class="contact-methods">
+            <a href="tel:12125550100" class="contact-method"><div class="cm-icon">📞</div><div><h5>Call Us</h5><span>+1 (212) 555-0100</span></div></a>
+            <a href="https://wa.me/12125550100" target="_blank" class="contact-method"><div class="cm-icon">💬</div><div><h5>WhatsApp</h5><span>Chat with us</span></div></a>
+            <a href="mailto:info@yourbusiness.com" class="contact-method"><div class="cm-icon">✉️</div><div><h5>Email</h5><span>info@yourbusiness.com</span></div></a>
+            <div class="contact-method no-link"><div class="cm-icon">🕐</div><div><h5>Hours</h5><span>8:00 AM - 7:00 PM</span></div></div>
+          </div>
+        </div>
+        <div class="contact-form-panel">
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group"><input type="text" name="name" required placeholder="Full Name"></div>
+              <div class="form-group"><input type="email" name="email" required placeholder="Email Address"></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><input type="tel" name="phone" placeholder="Phone Number"></div>
+              <div class="form-group">
+                <select name="service"><option value="">Select Service</option><option value="Comprehensive Handyman &amp; Exterior Services">Comprehensive Handyman &amp; Exterior Services</option></select>
+              </div>
+            </div>
+            <div class="form-group"><textarea name="message" rows="4" required placeholder="Tell us about your needs..."></textarea></div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <div id="contactFormMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+      <!-- Map -->
+      <div class="map-wrap">
+        <div id="map" class="map-container" data-lat="40.7128" data-lng="-74.006" data-business="Frias handyman services, LLC"></div>
+        <a href="locations.html" class="btn btn-outline" style="margin-top:1rem;">View All Locations</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section footer-brand">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 38 38"><rect width="38" height="38" rx="9" fill="#336699"/><path d="M9 19L16 26L29 12" stroke="#FF9933" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+            <span>Frias handyman services, LLC</span>
+          </div>
+          <p>At Frias handyman services, LLC, we are dedicated to providing Aurora, Colorado homes and businesses with top-tier handyman and exterior ser...</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">tw</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Book Now</a></li><li><a href="locations.html">Locations</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul><li><a href="services.html">Comprehensive Handyman &amp; Exterior Services</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li>📞 +1 (212) 555-0100</li>
+            <li>✉️ info@yourbusiness.com</li>
+            <li>📍 New York, NY</li>
+            <li>🕐 8:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Frias handyman services, LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CHATBOT -->
+  <div id="chatbot-widget" class="chatbot-widget">
+    <button id="chatbot-trigger" class="chatbot-trigger" aria-label="Open chat">
+      <span class="chatbot-trigger-icon">💬</span>
+      <span class="chatbot-trigger-badge">1</span>
+    </button>
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+        <div class="chatbot-header-info"><div class="chatbot-avatar">AI</div><div><h5>AI Assistant</h5><span class="chatbot-status">● Online</span></div></div>
+        <button id="chatbot-close" aria-label="Close chat">×</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages">
+        <div class="chatbot-message bot">
+          <div class="chatbot-msg-content">
+            <p>👋 Hi! I'm your AI assistant. How can I help you today?</p>
+            <div class="chatbot-quick-replies">
+              <button class="quick-reply" data-message="Book an appointment">📅 Book Appointment</button>
+              <button class="quick-reply" data-message="What services do you offer">📋 Our Services</button>
+              <button class="quick-reply" data-message="What are your hours">🕐 Opening Hours</button>
+              <button class="quick-reply" data-message="Emergency help needed">🚨 Emergency</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chatbot-input-area">
+        <input type="text" id="chatbot-input-field" placeholder="Type your message..." autocomplete="off">
+        <button id="chatbot-send" aria-label="Send">➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PWA Install Prompt -->
+  <div id="pwa-prompt" class="pwa-prompt">
+    <div class="pwa-prompt-content">
+      <div class="pwa-prompt-icon">📱</div>
+      <div><h5>Add to Home Screen</h5><p>Get a faster, app-like experience</p></div>
+      <button id="pwa-install-btn" class="btn btn-primary">Install</button>
+      <button id="pwa-dismiss-btn" class="pwa-dismiss">×</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+  <script src="https://js.stripe.com/v3/"></script>
+</body>
+</html>
