@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Frias handyman services, LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <svg width="38" height="38" viewBox="0 0 38 38">
+            <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#FF9933"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs>
+            <rect width="38" height="38" rx="9" fill="#336699"/>
+            <path d="M9 19L16 26L29 12" stroke="url(#logoGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Frias handyman services, LLC</span>
+        </a>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link ">Home</a></li><li><a href="about.html" class="nav-link ">About</a></li><li><a href="services.html" class="nav-link active">Services</a></li><li><a href="locations.html" class="nav-link ">Locations</a></li><li><a href="booking.html" class="nav-link ">Book Now</a></li>
+        <li class="nav-auth-group">
+          <a href="login.html" class="nav-link btn-login" id="nav-login-btn">Login</a>
+          <a href="customer-portal.html" class="nav-link btn-portal" id="nav-portal-btn" style="display:none;">My Account</a>
+          <a href="admin-dashboard.html" class="nav-link btn-admin" id="nav-admin-btn" style="display:none;">Dashboard</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="page-hero-glow"></div>
+    <div class="container"><span class="section-tag">Services</span><h1 class="page-hero-title">What We Offer</h1><p class="page-hero-sub">Comprehensive solutions for every challenge</p></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Services</button>
+        <button class="filter-tab" data-filter="General">General</button>
+      </div>
+      <!-- Service Cards -->
+      <div class="services-detail-grid" id="services-grid">
+        
+        <div class="service-detail-card" data-category="General">
+          <div class="service-detail-header">
+            <span class="service-detail-cat">General</span>
+            <span class="service-detail-price">$150</span>
+          </div>
+          <h3>Comprehensive Handyman &amp; Exterior Services</h3>
+          <p>From minor repairs to significant home improvements, Frias handyman services, LLC offers a wide range of reliable services designed to keep your property in pristine condition. Our skilled team handles interior tasks with precision and exterior projects with durability in mind, ensuring professional craftsmanship and peace of mind for every client in Aurora, Colorado.</p>
+          <div class="service-detail-meta">
+            <span>⏱ Duration: <strong>60 min</strong></span>
+            <span>👤 Staff: <strong>1 available</strong></span>
+          </div>
+          <div class="service-staff-list">
+            <span class="mini-avatar" title="Expert Advisor">EA</span>
+          </div>
+          <div class="service-detail-actions">
+            <a href="booking.html?service=Comprehensive%20Handyman%20%26%20Exterior%20Services" class="btn btn-primary">Book Now</a>
+            <a href="booking.html?service=Comprehensive%20Handyman%20%26%20Exterior%20Services&type=emergency" class="btn btn-emergency-sm">🚨 Emergency</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq-section">
+    <div class="container">
+      <div class="section-header"><span class="section-tag">FAQ</span><h2 class="section-title">Common Questions</h2></div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question">How long does onboarding take?<span class="faq-arrow">+</span></button><div class="faq-answer"><p>Onboarding typically takes 1–3 business days depending on the service. We'll walk you through every step.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Can I reschedule my appointment?<span class="faq-arrow">+</span></button><div class="faq-answer"><p>Yes, you can reschedule up to 24 hours before your appointment at no cost via your Customer Portal.</p></div></div>
+        <div class="faq-item"><button class="faq-question">What is the cancellation policy?<span class="faq-arrow">+</span></button><div class="faq-answer"><p>Cancellations within 48 hours are fully refundable. Cancellations within 24 hours receive a 50% refund.</p></div></div>
+        <div class="faq-item"><button class="faq-question">Do you offer group discounts?<span class="faq-arrow">+</span></button><div class="faq-answer"><p>Absolutely! Groups of 5+ receive a 15% discount. Contact us to discuss custom pricing.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container"><h2>Not Sure Which Service Fits?</h2><p>Our team will help you find the perfect match.</p><a href="booking.html" class="btn btn-primary">Free Consultation</a></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section footer-brand">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 38 38"><rect width="38" height="38" rx="9" fill="#336699"/><path d="M9 19L16 26L29 12" stroke="#FF9933" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+            <span>Frias handyman services, LLC</span>
+          </div>
+          <p>At Frias handyman services, LLC, we are dedicated to providing Aurora, Colorado homes and businesses with top-tier handyman and exterior ser...</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">tw</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Book Now</a></li><li><a href="locations.html">Locations</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul><li><a href="services.html">Comprehensive Handyman &amp; Exterior Services</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li>📞 +1 (212) 555-0100</li>
+            <li>✉️ info@yourbusiness.com</li>
+            <li>📍 New York, NY</li>
+            <li>🕐 8:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Frias handyman services, LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
