@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locations | Frias handyman services, LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo">
+        <a href="index.html" style="text-decoration:none;display:flex;align-items:center;gap:10px;">
+          <svg width="38" height="38" viewBox="0 0 38 38">
+            <defs><linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#FF9933"/><stop offset="100%" style="stop-color:#f59e0b"/></linearGradient></defs>
+            <rect width="38" height="38" rx="9" fill="#336699"/>
+            <path d="M9 19L16 26L29 12" stroke="url(#logoGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="logo-text">Frias handyman services, LLC</span>
+        </a>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link ">Home</a></li><li><a href="about.html" class="nav-link ">About</a></li><li><a href="services.html" class="nav-link ">Services</a></li><li><a href="locations.html" class="nav-link active">Locations</a></li><li><a href="booking.html" class="nav-link ">Book Now</a></li>
+        <li class="nav-auth-group">
+          <a href="login.html" class="nav-link btn-login" id="nav-login-btn">Login</a>
+          <a href="customer-portal.html" class="nav-link btn-portal" id="nav-portal-btn" style="display:none;">My Account</a>
+          <a href="admin-dashboard.html" class="nav-link btn-admin" id="nav-admin-btn" style="display:none;">Dashboard</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+  <section class="page-hero">
+    <div class="page-hero-glow"></div>
+    <div class="container"><span class="section-tag">Find Us</span><h1 class="page-hero-title">Our Locations</h1><p class="page-hero-sub">Visit us at any of our 3 offices</p></div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="locations-layout">
+        <div class="locations-list">
+          
+          <div class="location-card active" data-index="0" data-lat="40.7128" data-lng="-74.006" onclick="selectLocation(0)">
+            <div class="loc-number">01</div>
+            <div class="loc-info">
+              <h4>Main Office</h4>
+              <p class="loc-address">📍 123 Business Ave, Suite 500, New York, NY 10001</p>
+              <p class="loc-phone">📞 +1 (212) 555-0100</p>
+              <p class="loc-hours">🕐 Mon-Fri 9AM-6PM</p>
+            </div>
+            <div class="loc-actions">
+              <a href="tel:12125550100" class="btn btn-ghost btn-sm">Call</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=40.7128,-74.006" target="_blank" class="btn btn-outline btn-sm">Directions</a>
+            </div>
+          </div>
+          <div class="location-card " data-index="1" data-lat="40.72" data-lng="-73.995" onclick="selectLocation(1)">
+            <div class="loc-number">02</div>
+            <div class="loc-info">
+              <h4>Downtown Branch</h4>
+              <p class="loc-address">📍 456 Commerce Blvd, Floor 3, New York, NY 10002</p>
+              <p class="loc-phone">📞 +1 (212) 555-0200</p>
+              <p class="loc-hours">🕐 Mon-Sat 8AM-7PM</p>
+            </div>
+            <div class="loc-actions">
+              <a href="tel:12125550200" class="btn btn-ghost btn-sm">Call</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=40.72,-73.995" target="_blank" class="btn btn-outline btn-sm">Directions</a>
+            </div>
+          </div>
+          <div class="location-card " data-index="2" data-lat="40.695" data-lng="-73.99" onclick="selectLocation(2)">
+            <div class="loc-number">03</div>
+            <div class="loc-info">
+              <h4>Brooklyn Hub</h4>
+              <p class="loc-address">📍 789 Innovation Dr, Unit 2B, Brooklyn, NY 11201</p>
+              <p class="loc-phone">📞 +1 (718) 555-0300</p>
+              <p class="loc-hours">🕐 Mon-Fri 10AM-5PM</p>
+            </div>
+            <div class="loc-actions">
+              <a href="tel:17185550300" class="btn btn-ghost btn-sm">Call</a>
+              <a href="https://www.google.com/maps/search/?api=1&query=40.695,-73.99" target="_blank" class="btn btn-outline btn-sm">Directions</a>
+            </div>
+          </div>
+        </div>
+        <div class="locations-map-panel">
+          <div id="locations-map" class="locations-map" data-locations='[{"name":"Main Office","address":"123 Business Ave, Suite 500","city":"New York","state":"NY","zip":"10001","lat":40.7128,"lng":-74.006,"phone":"+1 (212) 555-0100","hours":"Mon-Fri 9AM-6PM"},{"name":"Downtown Branch","address":"456 Commerce Blvd, Floor 3","city":"New York","state":"NY","zip":"10002","lat":40.72,"lng":-73.995,"phone":"+1 (212) 555-0200","hours":"Mon-Sat 8AM-7PM"},{"name":"Brooklyn Hub","address":"789 Innovation Dr, Unit 2B","city":"Brooklyn","state":"NY","zip":"11201","lat":40.695,"lng":-73.99,"phone":"+1 (718) 555-0300","hours":"Mon-Fri 10AM-5PM"}]'></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section footer-brand">
+          <div class="footer-logo">
+            <svg width="32" height="32" viewBox="0 0 38 38"><rect width="38" height="38" rx="9" fill="#336699"/><path d="M9 19L16 26L29 12" stroke="#FF9933" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+            <span>Frias handyman services, LLC</span>
+          </div>
+          <p>At Frias handyman services, LLC, we are dedicated to providing Aurora, Colorado homes and businesses with top-tier handyman and exterior ser...</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon">f</a>
+            <a href="#" class="social-icon">in</a>
+            <a href="#" class="social-icon">tw</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="booking.html">Book Now</a></li><li><a href="locations.html">Locations</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul><li><a href="services.html">Comprehensive Handyman &amp; Exterior Services</a></li></ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li>📞 +1 (212) 555-0100</li>
+            <li>✉️ info@yourbusiness.com</li>
+            <li>📍 New York, NY</li>
+            <li>🕐 8:00 AM - 7:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Frias handyman services, LLC. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  
+</body>
+</html>
