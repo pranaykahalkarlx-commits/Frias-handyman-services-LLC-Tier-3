@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Frias handyman services, LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-logo"><a href="index.html">
+      <svg width="32" height="32" viewBox="0 0 38 38"><rect width="38" height="38" rx="9" fill="#336699"/><path d="M9 19L16 26L29 12" stroke="#FF9933" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      <span>Frias handyman services, LLC</span>
+    </a></div>
+    <nav class="sidebar-nav">
+      <a href="#" class="sidebar-link active" data-section="overview">📊 Overview</a>
+      <a href="#" class="sidebar-link" data-section="appointments">📅 Appointments</a>
+      <a href="#" class="sidebar-link" data-section="customers">👥 Customers</a>
+      <a href="#" class="sidebar-link" data-section="reviews">⭐ Reviews</a>
+      <a href="#" class="sidebar-link" data-section="revenue">💰 Revenue</a>
+      <a href="#" class="sidebar-link" data-section="staff">👔 Staff</a>
+      <hr>
+      <a href="index.html" class="sidebar-link">🏠 Website</a>
+      <a href="#" class="sidebar-link" id="admin-logout">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="dashboard-main">
+    <div class="dashboard-topbar">
+      <button class="sidebar-toggle" id="sidebar-toggle">☰</button>
+      <div class="topbar-search"><input type="text" placeholder="Search appointments, customers..."></div>
+      <div class="topbar-right">
+        <div class="topbar-notif">🔔 <span class="notif-badge">3</span></div>
+        <div class="topbar-user"><div class="topbar-avatar">AD</div><span>Admin</span></div>
+      </div>
+    </div>
+
+    <!-- OVERVIEW SECTION -->
+    <div class="dashboard-section active" id="section-overview">
+      <h2 class="dashboard-title">Dashboard Overview</h2>
+      <!-- KPI Cards -->
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(255, 153, 51, 0.15);color:#FF9933">💰</div><div class="kpi-value">$142,580</div><div class="kpi-label">Total Revenue</div><div class="kpi-change positive">↑ 23.5%</div></div>
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(245, 158, 11, 0.15);color:#f59e0b">📅</div><div class="kpi-value">347</div><div class="kpi-label">Total Bookings</div><div class="kpi-change positive">↑ 12%</div></div>
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(16,185,129,0.15);color:#10b981">👥</div><div class="kpi-value">198</div><div class="kpi-label">Customers</div><div class="kpi-change positive">↑ 8.2%</div></div>
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(239,68,68,0.15);color:#ef4444">⭐</div><div class="kpi-value">4.8</div><div class="kpi-label">Avg Rating</div><div class="kpi-change neutral">→ Stable</div></div>
+      </div>
+
+      <!-- Charts Row -->
+      <div class="charts-row">
+        <div class="chart-card chart-large">
+          <h4>Weekly Appointments</h4>
+          <div class="bar-chart" id="bar-chart">
+            <div class="bar-item"><div class="bar" style="height:100%"><span class="bar-val">8</span></div><span class="bar-label">Mon</span></div><div class="bar-item"><div class="bar" style="height:25%"><span class="bar-val">2</span></div><span class="bar-label">Tue</span></div><div class="bar-item"><div class="bar" style="height:62.5%"><span class="bar-val">5</span></div><span class="bar-label">Wed</span></div><div class="bar-item"><div class="bar" style="height:25%"><span class="bar-val">2</span></div><span class="bar-label">Thu</span></div><div class="bar-item"><div class="bar" style="height:25%"><span class="bar-val">2</span></div><span class="bar-label">Fri</span></div><div class="bar-item"><div class="bar" style="height:75%"><span class="bar-val">6</span></div><span class="bar-label">Sat</span></div><div class="bar-item"><div class="bar" style="height:37.5%"><span class="bar-val">3</span></div><span class="bar-label">Sun</span></div>
+          </div>
+        </div>
+        <div class="chart-card">
+          <h4>Revenue by Service</h4>
+          <div class="donut-chart-container">
+            <svg class="donut-chart" viewBox="0 0 120 120" id="donut-chart"></svg>
+            <div class="donut-legend" id="donut-legend"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Appointments -->
+      <div class="recent-card">
+        <div class="recent-header"><h4>Recent Appointments</h4><a href="#" class="view-all" data-section="appointments">View All →</a></div>
+        <div class="table-wrap">
+          <table class="dashboard-table">
+            <thead><tr><th>#</th><th>Customer</th><th>Service</th><th>Date</th><th>Status</th><th>Amount</th></tr></thead>
+            <tbody id="recent-appointments-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- APPOINTMENTS SECTION -->
+    <div class="dashboard-section" id="section-appointments">
+      <h2 class="dashboard-title">All Appointments</h2>
+      <div class="table-filters">
+        <input type="text" id="appt-search" placeholder="Search...">
+        <select id="appt-status-filter"><option value="all">All Status</option><option value="upcoming">Upcoming</option><option value="completed">Completed</option><option value="cancelled">Cancelled</option></select>
+      </div>
+      <div class="table-wrap"><table class="dashboard-table"><thead><tr><th>#</th><th>Customer</th><th>Service</th><th>Expert</th><th>Date & Time</th><th>Location</th><th>Status</th><th>Amount</th><th>Actions</th></tr></thead><tbody id="appointments-body"></tbody></table></div>
+    </div>
+
+    <!-- CUSTOMERS SECTION -->
+    <div class="dashboard-section" id="section-customers">
+      <h2 class="dashboard-title">Customers</h2>
+      <div class="table-filters"><input type="text" id="cust-search" placeholder="Search customers..."></div>
+      <div class="table-wrap"><table class="dashboard-table"><thead><tr><th>#</th><th>Name</th><th>Email</th><th>Phone</th><th>Bookings</th><th>Total Spent</th><th>Joined</th><th>Actions</th></tr></thead><tbody id="customers-body"></tbody></table></div>
+    </div>
+
+    <!-- REVIEWS SECTION -->
+    <div class="dashboard-section" id="section-reviews">
+      <h2 class="dashboard-title">Reviews & Feedback</h2>
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </div>
+
+    <!-- REVENUE SECTION -->
+    <div class="dashboard-section" id="section-revenue">
+      <h2 class="dashboard-title">Revenue Analytics</h2>
+      <div class="kpi-grid">
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(255, 153, 51, 0.15);color:#FF9933">📈</div><div class="kpi-value">$24,350</div><div class="kpi-label">Monthly Revenue</div><div class="kpi-change positive">↑ 18.2%</div></div>
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(16,185,129,0.15);color:#10b981">💵</div><div class="kpi-value">$411</div><div class="kpi-label">Avg per Booking</div><div class="kpi-change positive">↑ 5.1%</div></div>
+        <div class="kpi-card"><div class="kpi-icon" style="background:rgba(245, 158, 11, 0.15);color:#f59e0b">🎯</div><div class="kpi-value">23.5%</div><div class="kpi-label">YoY Growth</div><div class="kpi-change positive">↑ 3.4%</div></div>
+      </div>
+      <div class="chart-card">
+        <h4>Monthly Revenue Breakdown</h4>
+        <div class="revenue-bars" id="revenue-bars">
+          <div class="rev-bar-item"><div class="rev-bar" style="height:62.88%"><span class="rev-val">$22k</span></div><span>Jan</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:71.64285714285714%"><span class="rev-val">$25k</span></div><span>Feb</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:76.97428571428571%"><span class="rev-val">$27k</span></div><span>Mar</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:45.47714285714285%"><span class="rev-val">$16k</span></div><span>Apr</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:53.831428571428575%"><span class="rev-val">$19k</span></div><span>May</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:44.33714285714286%"><span class="rev-val">$16k</span></div><span>Jun</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:46.08571428571429%"><span class="rev-val">$16k</span></div><span>Jul</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:74.7057142857143%"><span class="rev-val">$26k</span></div><span>Aug</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:75.62285714285714%"><span class="rev-val">$26k</span></div><span>Sep</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:65.13142857142857%"><span class="rev-val">$23k</span></div><span>Oct</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:51.72571428571429%"><span class="rev-val">$18k</span></div><span>Nov</span></div><div class="rev-bar-item"><div class="rev-bar" style="height:29.034285714285712%"><span class="rev-val">$10k</span></div><span>Dec</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAFF SECTION -->
+    <div class="dashboard-section" id="section-staff">
+      <h2 class="dashboard-title">Staff Management</h2>
+      <div class="staff-management-grid">
+        
+        <div class="staff-mgmt-card">
+          <div class="staff-mgmt-avatar">AJ</div>
+          <h4>Alex Johnson</h4>
+          <span class="staff-mgmt-role">Senior Consultant</span>
+          <div class="staff-mgmt-stats">
+            <div><span class="sm-num">44</span><span>Appointments</span></div>
+            <div><span class="sm-num">4.6</span><span>Rating</span></div>
+          </div>
+          <div class="staff-mgmt-tags"><span class="tag">Strategy</span><span class="tag">Business Growth</span></div>
+          <button class="btn btn-ghost btn-sm">Edit</button>
+        </div>
+        <div class="staff-mgmt-card">
+          <div class="staff-mgmt-avatar">MS</div>
+          <h4>Maria Santos</h4>
+          <span class="staff-mgmt-role">Business Coach</span>
+          <div class="staff-mgmt-stats">
+            <div><span class="sm-num">50</span><span>Appointments</span></div>
+            <div><span class="sm-num">4.3</span><span>Rating</span></div>
+          </div>
+          <div class="staff-mgmt-tags"><span class="tag">Coaching</span><span class="tag">Team Building</span></div>
+          <button class="btn btn-ghost btn-sm">Edit</button>
+        </div>
+        <div class="staff-mgmt-card">
+          <div class="staff-mgmt-avatar">DL</div>
+          <h4>David Lee</h4>
+          <span class="staff-mgmt-role">Digital Strategist</span>
+          <div class="staff-mgmt-stats">
+            <div><span class="sm-num">37</span><span>Appointments</span></div>
+            <div><span class="sm-num">4.4</span><span>Rating</span></div>
+          </div>
+          <div class="staff-mgmt-tags"><span class="tag">Digital</span><span class="tag">Innovation</span></div>
+          <button class="btn btn-ghost btn-sm">Edit</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
