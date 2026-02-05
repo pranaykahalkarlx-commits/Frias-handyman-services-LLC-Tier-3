@@ -1,0 +1,213 @@
+{
+  "businessName": "Frias handyman services, LLC",
+  "category": "Professional Services",
+  "phone": "+1 (212) 555-0100",
+  "email": "info@yourbusiness.com",
+  "address": {
+    "full": "123 Business Ave, Suite 500, New York, NY 10001",
+    "street": "123 Business Ave",
+    "city": "New York",
+    "state": "NY",
+    "postal_code": "10001"
+  },
+  "location": {
+    "lat": 40.7128,
+    "lng": -74.006
+  },
+  "rating": 4.8,
+  "totalReviews": 47,
+  "hero": {
+    "headline": "Expert Handyman Services in Aurora, Colorado | Frias handyman services, LLC",
+    "subheadline": "Professional Craftsmanship, Reliable Solutions, and Clear Communication for Your Home & Exterior Projects.",
+    "cta_text": "Get Your Free Estimate Today!"
+  },
+  "aboutUs": "At Frias handyman services, LLC, we are dedicated to providing Aurora, Colorado homes and businesses with top-tier handyman and exterior services. Our commitment to professionalism, exceptional craftsmanship, and unwavering reliability ensures every project is completed to the highest standards. We pride ourselves on clear communication, keeping you informed every step of the way, and delivering results that truly exceed expectations. Choose Frias handyman services, LLC for trusted solutions that enhance your property.",
+  "services": [
+    {
+      "name": "Comprehensive Handyman & Exterior Services",
+      "description": "From minor repairs to significant home improvements, Frias handyman services, LLC offers a wide range of reliable services designed to keep your property in pristine condition. Our skilled team handles interior tasks with precision and exterior projects with durability in mind, ensuring professional craftsmanship and peace of mind for every client in Aurora, Colorado.",
+      "price": 150,
+      "duration": "60 min",
+      "staff": [
+        "Expert Advisor"
+      ],
+      "category": "General"
+    }
+  ],
+  "staff": [
+    {
+      "name": "Alex Johnson",
+      "role": "Senior Consultant",
+      "avatar": "AJ",
+      "bio": "15 years of industry experience",
+      "specialties": [
+        "Strategy",
+        "Business Growth"
+      ]
+    },
+    {
+      "name": "Maria Santos",
+      "role": "Business Coach",
+      "avatar": "MS",
+      "bio": "Certified leadership coach",
+      "specialties": [
+        "Coaching",
+        "Team Building"
+      ]
+    },
+    {
+      "name": "David Lee",
+      "role": "Digital Strategist",
+      "avatar": "DL",
+      "bio": "Former tech executive turned advisor",
+      "specialties": [
+        "Digital",
+        "Innovation"
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "name": "Main Office",
+      "address": "123 Business Ave, Suite 500",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001",
+      "lat": 40.7128,
+      "lng": -74.006,
+      "phone": "+1 (212) 555-0100",
+      "hours": "Mon-Fri 9AM-6PM"
+    },
+    {
+      "name": "Downtown Branch",
+      "address": "456 Commerce Blvd, Floor 3",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10002",
+      "lat": 40.72,
+      "lng": -73.995,
+      "phone": "+1 (212) 555-0200",
+      "hours": "Mon-Sat 8AM-7PM"
+    },
+    {
+      "name": "Brooklyn Hub",
+      "address": "789 Innovation Dr, Unit 2B",
+      "city": "Brooklyn",
+      "state": "NY",
+      "zip": "11201",
+      "lat": 40.695,
+      "lng": -73.99,
+      "phone": "+1 (718) 555-0300",
+      "hours": "Mon-Fri 10AM-5PM"
+    }
+  ],
+  "testimonials": [
+    {
+      "text": "Absolutely outstanding service. The team was professional and delivered beyond expectations.",
+      "author": "Sarah M.",
+      "rating": 5
+    },
+    {
+      "text": "Best experience I've had. Will definitely recommend to everyone I know.",
+      "author": "James R.",
+      "rating": 5
+    },
+    {
+      "text": "Very impressed with the quality and attention to detail. Worth every penny.",
+      "author": "Emily K.",
+      "rating": 4
+    },
+    {
+      "text": "Exceptional team and seamless process from booking to completion.",
+      "author": "Michael T.",
+      "rating": 5
+    },
+    {
+      "text": "They truly go above and beyond. Already booked my next appointment!",
+      "author": "Lisa Chen",
+      "rating": 5
+    }
+  ],
+  "uniqueSellingPoints": [
+    "Professionalism You Can Trust",
+    "Unwavering Reliability and Timeliness",
+    "Exceptional Craftsmanship and Attention to Detail",
+    "Clear and Consistent Communication",
+    "Local Expertise in Aurora, Colorado",
+    "Comprehensive Handyman and Exterior Solutions"
+  ],
+  "design": {
+    "primaryColor": "#336699",
+    "secondaryColor": "#FF9933",
+    "accentColor": "#f59e0b",
+    "style": "modern"
+  },
+  "metaDescription": "Premium professional services — Strategic consulting, coaching, and digital transformation for business excellence.",
+  "keywords": [
+    "business consulting",
+    "professional services",
+    "strategic solutions",
+    "business coaching"
+  ],
+  "openingHours": [
+    {
+      "day": "Monday - Friday",
+      "hours": "8:00 AM - 7:00 PM"
+    },
+    {
+      "day": "Saturday",
+      "hours": "9:00 AM - 5:00 PM"
+    },
+    {
+      "day": "Sunday",
+      "hours": "By Appointment Only"
+    }
+  ],
+  "googleMapsApiKey": "",
+  "stripePublicKey": "",
+  "yearEstablished": "2009",
+  "analytics": {
+    "totalRevenue": 142580,
+    "monthlyRevenue": 24350,
+    "totalAppointments": 347,
+    "totalCustomers": 198,
+    "revenueByService": [
+      {
+        "name": "Comprehensive Handyman & Exterior Services",
+        "revenue": 15965
+      }
+    ],
+    "appointmentsByDay": [
+      {
+        "day": "Mon",
+        "count": 8
+      },
+      {
+        "day": "Tue",
+        "count": 2
+      },
+      {
+        "day": "Wed",
+        "count": 5
+      },
+      {
+        "day": "Thu",
+        "count": 2
+      },
+      {
+        "day": "Fri",
+        "count": 2
+      },
+      {
+        "day": "Sat",
+        "count": 6
+      },
+      {
+        "day": "Sun",
+        "count": 3
+      }
+    ],
+    "growthRate": 23.5,
+    "avgRating": 4.8
+  }
+}
